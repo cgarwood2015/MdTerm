@@ -1,0 +1,23 @@
+a. Define the term algorithm.  What are algorithm good for?
+=============================================================
+
+An algorithm is a set of actions that is executed in a specific order to solve a specific problem.
+Each action must be executed and the order of the action must be followed to a tee for the algorithm
+to be successful.
+
+You may define an algorithm for any mondane procedure for example how to bake a cake, the algorithm 
+might be (i) gather ingredients (ii) blend fruits (iii) beat eggs  (iv) mix sugar and butter  
+(v) add beaten eggs to sugar and butter (vi) add blended fruits (vii) add remaining ingredients
+(viii) mix together ingredients (ix) grease baking tin (x) pour mixture in tin 
+(xi) bake in oven at 350F.  Its very important to execute the action in the order specified, for example
+if you bake in the oven before you add the beaten eggs the result for the cake would be very
+different and most likely be unsuccessful.
+
+Algorithms are used in computer science to outline solutions to problems, their usefulness however goes far beyond 
+computer science.  Algorithms can be used in any field, especially mathematics and science, where 
+solutions are exact and not subjective.  Algorithms are a designer's expression of a solution to a particular problem, 
+in other words its a designers structured thoughts as to how they would solve a particular problem.      
+
+
+b. What is UML? What is it good for?
+====================================
