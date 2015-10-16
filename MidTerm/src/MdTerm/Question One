@@ -21,5 +21,34 @@ in other words its a designers structured thoughts as to how they would solve a 
 
 b. What is UML? What is it good for?
 ====================================
+Defining your algorithms is just the first step in designing a programming solution.  
+Software Engineers will then have to make the decision what language will be used to 
+implement that solution.  If the decision is made to use an object oriented oriented
+design then a number a number of processes should be followed to move the solution from
+the design phase to implementation, this process is known as object oriented analysis
+and design process (OOAD).
 
-Likes me this
+UML, i.e. THe Unified Modeling Language, has emerged as the most widely used scheme
+for modeling object oriented systems and guide the OOAD process.  UML is a graphical is a graphical 
+scheme that provides a standard for visualizing the design of a object oriented system.
+
+The language express the solution to a software system through the use of about 14 different diagrams 
+such as class diagrams, use case diagrams, sequence diagrams etc.  The important point to note is that 
+UML is a language, not a procedure or a method - it does not specify the method or process.
+
+
+
+
+
+
+
+
+References:
+===========
+UML Tutorial. Retrieved from http://www.sparxsystems.com/uml-tutorial.html
+What is UML. Retrieved from http://www.sparxsystems.com/resources/uml2_tutorial/
+
+
+
+
+
