@@ -37,6 +37,72 @@ such as class diagrams, use case diagrams, sequence diagrams etc.  The important
 UML is a language, not a procedure or a method - it does not specify the method or process.
 
 
+=========================================================================================================
+c. Write a program that decides whether integer number input1 can be devided by integer input2 without 
+remainder.  The program should output "No Remainder" and "Remainder is:" if there is any.  In the latter
+case, the program should output the value of the remainder as well.
+=========================================================================================================
+
+Program
+=======
+package MdTerm;
+
+/**
+ * Class			Remainder
+ * Methods:  		Takes two integer divide one by the other and return the remainder
+ * 					Output either No Remainder of the Remainder value
+ * 
+ * Exceptions:		NONE
+ * 					  
+ * 
+ */
+public class Remainder {
+
+	public static void main(String[] args) {  //Main
+		int iValue=0,lValue=0,remainder=0;
+		String sRemainder = "";
+		
+		while(iValue  != -1){
+			System.out.printf("Please enter integer 1(-1 to exit):");
+			if((iValue = ScannerUtility.getArithmeticInput()) == -1){  //Input and test input
+				continue;
+			}
+			
+			System.out.printf("Please enter integer 2(-1 to exit):");
+			if((lValue = ScannerUtility.getArithmeticInput()) == -1){  //Input and test input
+				iValue = -1;
+				continue;
+			}
+			
+			remainder = iValue % lValue;
+			sRemainder = (remainder <= 0)? "No Remainder" : "Remainder is: "+remainder;
+			
+			System.out.printf("%s%n%n",sRemainder);
+		}
+	}  //End Main
+}
+
+Output
+========
+Please enter integer 1(-1 to exit):5
+Please enter integer 2(-1 to exit):3
+Remainder is: 2
+
+Please enter integer 1(-1 to exit):5
+Please enter integer 2(-1 to exit):2
+Remainder is: 1
+
+Please enter integer 1(-1 to exit):10
+Please enter integer 2(-1 to exit):2
+No Remainder
+
+Please enter integer 1(-1 to exit):-1
+
+d. Write a program line that generates the following stream output:
+Fist Name: My_First_Name;
+Last Name: My_Last_Name;
+
+ 
 
 
 
