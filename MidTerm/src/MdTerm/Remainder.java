@@ -17,12 +17,12 @@ public class Remainder {
 		
 		while(iValue  != -1){
 			System.out.printf("Please enter integer 1(-1 to exit):");
-			if((iValue = ScannerUtility.getArithmeticInput()) == -1){  //Input and test input
+			if((iValue = ScannerUtility.getArithmeticInput()) == -1){  //Input and test sentinel value
 				continue;
 			}
 			
 			System.out.printf("Please enter integer 2(-1 to exit):");
-			if((lValue = ScannerUtility.getArithmeticInput()) == -1){  //Input and test input
+			if((lValue = ScannerUtility.getArithmeticInput()) == -1){  //Input and test sentinel value
 				iValue = -1;
 				continue;
 			}
