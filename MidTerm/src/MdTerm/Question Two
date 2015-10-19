@@ -1,0 +1,109 @@
+a. What is compilation? What does the compiler do?
+==================================================
+When a programmer writes a program, the computer is not able to execute the syntax that is written for the programmer as 
+the computer only understands machine language. There are two types of programming languages, the interpretive language - 
+code is converted to machine language at the time of execution and compiled language - code is converted to machine
+language at development time.  The compiled code is what is deployed for execution.  Compilation is the process of converting 
+program syntax (source code) to machine language and the compiler is the tool that converts the program syntax to machine language.
+
+The compiler carries out the following functions:
+1. Detect syntax error at development during development (particularly when integrated with development environment eg. Eclipse)
+2. To check at compile time for syntax error.
+3. To convert source code into machine language (in some cases executables).
+
+
+b. How many control statements does java have? Name the control statements of Java.  
+Give at least 1 example of each.
+=====================================================================================================================
+Java has 7 control statements broken down as selection statements and repetition statements.
+These are:
+
+(i) If selection statement e.g. if(studentGrade >= 60){ System.out.println("Pass");}
+
+(ii) If/Else selection statement 
+e.g.  if(studentGrade >= 60){
+			System.out.println("Pass");
+	  }else{
+	  		System.out.println("Failed");
+	  }
+	  
+(iii) while statement e.g. while(product <= 100){ product = product * 3; }
+
+(iv) do while repetition statement e.g. 
+do{
+	System.out.println("This is a do while");
+	counter++;
+  }do while(counter <= 10);
+	
+(v) For repetition statement and enhance for e.g.
+for(int i = 0; i <= 10; i++){
+	System.out.println("For counter..");
+}		 	  		 		
+
+(vi) Switch multiple selection statement
+
+e.g. 
+int grade;
+switch(grade/10){
+	case 9:
+	case 10:
+		aCounter++
+		break;
+	case 8:
+		bCounter++
+		break;
+	case 7:
+		cCounter++;
+		break;
+	case 6:
+		dCounter++;
+		break;
+	default:
+		fCounter++;
+		break;
+}						
+		
+(vii) Conditonal Operator
+eg. System.out.println((studentGrade >= 60)? "Pass":"Fail");
+
+
+c. Draw an activity diagram for define code
+===========================================
+ See image WhileAndIfActivityDiagram.jpeg
+ 
+ 
+ d.Write a for loop that sums even integers  from 4 through 54 And prints out the final result only.
+ ================================================================================================== 
+ 
+ Program
+ =======
+ package MdTerm;
+
+public class SumEvenIntegers {
+
+	public static void main(String[] args) {
+		
+		int result = 0;
+		
+		for(int i = 4;i <= 54;i+=2){
+			//just to ensure, this is so not neccessary but Im making sure
+			if(i % 2== 0){
+				result = result + i;
+			}
+		}
+		System.out.printf("The total of integer between 4 and 54 is:%d",result);
+		
+	}
+
+}
+ 
+Output
+=====
+The total of integer between 4 and 54 is:754
+ 
+ 
+ 
+ 
+ 
+ 
+ 
