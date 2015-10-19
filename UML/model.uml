@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_myraUHW3EeWiF5uDw-7hkQ" name="whileElement">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_ndQBUHW3EeWiF5uDw-7hkQ" name="Interaction1"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_nsRUwHW3EeWiF5uDw-7hkQ" name="Activity1"/>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_nuZbsHW3EeWiF5uDw-7hkQ" name="While and If Statement Activity Digram" node="_H8Z0QHW4EeWiF5uDw-7hkQ _addUoHW4EeWiF5uDw-7hkQ _lQDUgHW4EeWiF5uDw-7hkQ _mSyR8HW6EeWiF5uDw-7hkQ _ZiuqYHW7EeWiF5uDw-7hkQ _o3KdwHW7EeWiF5uDw-7hkQ _tjwIsHW7EeWiF5uDw-7hkQ _zLyvQHW7EeWiF5uDw-7hkQ _HL8D0HW8EeWiF5uDw-7hkQ _hUVD0HXOEeWiF5uDw-7hkQ">
+    <ownedComment xmi:type="uml:Comment" xmi:id="_Sd9XYHXMEeWiF5uDw-7hkQ">
+      <body>Merge</body>
+    </ownedComment>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_LghS4HXGEeWiF5uDw-7hkQ" target="_addUoHW4EeWiF5uDw-7hkQ" source="_lQDUgHW4EeWiF5uDw-7hkQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_T8ojkHXGEeWiF5uDw-7hkQ" name="studentCounter &lt;= 10" target="_mSyR8HW6EeWiF5uDw-7hkQ" source="_addUoHW4EeWiF5uDw-7hkQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vMbVsHXGEeWiF5uDw-7hkQ" target="_ZiuqYHW7EeWiF5uDw-7hkQ" source="_mSyR8HW6EeWiF5uDw-7hkQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_w4l8kHXGEeWiF5uDw-7hkQ" target="_o3KdwHW7EeWiF5uDw-7hkQ" source="_ZiuqYHW7EeWiF5uDw-7hkQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5ja-sHXGEeWiF5uDw-7hkQ" target="_zLyvQHW7EeWiF5uDw-7hkQ" source="_o3KdwHW7EeWiF5uDw-7hkQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_7ThDUHXGEeWiF5uDw-7hkQ" target="_tjwIsHW7EeWiF5uDw-7hkQ" source="_o3KdwHW7EeWiF5uDw-7hkQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_VWFNUHXHEeWiF5uDw-7hkQ" target="_HL8D0HW8EeWiF5uDw-7hkQ" source="_zLyvQHW7EeWiF5uDw-7hkQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_bTXrIHXHEeWiF5uDw-7hkQ" target="_HL8D0HW8EeWiF5uDw-7hkQ" source="_tjwIsHW7EeWiF5uDw-7hkQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_4LTN0HXJEeWiF5uDw-7hkQ" target="_lQDUgHW4EeWiF5uDw-7hkQ" source="_H8Z0QHW4EeWiF5uDw-7hkQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ZgJyUHXNEeWiF5uDw-7hkQ" target="_lQDUgHW4EeWiF5uDw-7hkQ" source="_HL8D0HW8EeWiF5uDw-7hkQ"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_-Qc04HXOEeWiF5uDw-7hkQ" name="StudentCounter > 10" target="_hUVD0HXOEeWiF5uDw-7hkQ" source="_addUoHW4EeWiF5uDw-7hkQ"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_H8Z0QHW4EeWiF5uDw-7hkQ" name="" outgoing="_4LTN0HXJEeWiF5uDw-7hkQ"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_addUoHW4EeWiF5uDw-7hkQ" name="" incoming="_LghS4HXGEeWiF5uDw-7hkQ" outgoing="_T8ojkHXGEeWiF5uDw-7hkQ _-Qc04HXOEeWiF5uDw-7hkQ"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_lQDUgHW4EeWiF5uDw-7hkQ" name="" incoming="_4LTN0HXJEeWiF5uDw-7hkQ _ZgJyUHXNEeWiF5uDw-7hkQ" outgoing="_LghS4HXGEeWiF5uDw-7hkQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_mSyR8HW6EeWiF5uDw-7hkQ" name="Print &quot;Enter result (1 = pass, 2 = fail)" incoming="_T8ojkHXGEeWiF5uDw-7hkQ" outgoing="_vMbVsHXGEeWiF5uDw-7hkQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ZiuqYHW7EeWiF5uDw-7hkQ" name="result = User Input" incoming="_vMbVsHXGEeWiF5uDw-7hkQ" outgoing="_w4l8kHXGEeWiF5uDw-7hkQ"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_o3KdwHW7EeWiF5uDw-7hkQ" name="" incoming="_w4l8kHXGEeWiF5uDw-7hkQ" outgoing="_5ja-sHXGEeWiF5uDw-7hkQ _7ThDUHXGEeWiF5uDw-7hkQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_tjwIsHW7EeWiF5uDw-7hkQ" name="Increment Variable Passes" incoming="_7ThDUHXGEeWiF5uDw-7hkQ" outgoing="_bTXrIHXHEeWiF5uDw-7hkQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_zLyvQHW7EeWiF5uDw-7hkQ" name="Increment Variable Failure" incoming="_5ja-sHXGEeWiF5uDw-7hkQ" outgoing="_VWFNUHXHEeWiF5uDw-7hkQ"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_HL8D0HW8EeWiF5uDw-7hkQ" name="Increment StudentCounter" incoming="_VWFNUHXHEeWiF5uDw-7hkQ _bTXrIHXHEeWiF5uDw-7hkQ" outgoing="_ZgJyUHXNEeWiF5uDw-7hkQ"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_hUVD0HXOEeWiF5uDw-7hkQ" name="" incoming="_-Qc04HXOEeWiF5uDw-7hkQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_nuka0HW3EeWiF5uDw-7hkQ" name="Interaction2"/>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_nwGE0HW3EeWiF5uDw-7hkQ" name="StateMachine1">
+    <region xmi:type="uml:Region" xmi:id="_nw1EoHW3EeWiF5uDw-7hkQ" name="Region1"/>
+  </packagedElement>
+</uml:Model>
