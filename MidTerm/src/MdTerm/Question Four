@@ -1,0 +1,162 @@
+a. How would you use regular for statement to replace an enhanced one?
+======================================================================
+The enhanced for statement can only be used in a limited situation i.e.
+- All the elements of the array or list must be of the type of the receiving parameter.
+
+- It only extract the content of the array it does not keep track of the array index nor
+was designed to modify array elements.
+
+- For enhanced for statement the length of the collection is irrelevant as the loop will
+never exceed its natural length.
+
+Because of these limitation enhanced loops cannot always be used and counter-controlled 
+for statements must be used.
+
+To convert from enhanced to a counter-controlled statement you need to:
+(i) Define a counter to keep track of the collection (array, list etc) index.
+(ii)Determine the length of the collection, subtract 1 from the length for zero based
+    collections e.g. array.  Make sure the counter does not exceed the length of the 
+    collection, you receive an IndexOutOfBound Exception.
+   
+(iii) access each collection element one at a time using the counter.
+(v) update the counter.
+
+e.g.
+
+Array:
+int[] array = {87, 68, 94, 100, 83, 78, 85, 91, 76, 87};
+int total = 0;
+
+Enhance for statement:
+for(int number:array){
+	total = total + number; 
+}
+
+Counter-controlled for statement:
+
+for(int counter=0; counter <= array.length - 1;counter++){
+	total = total + array[counter];
+}
+
+
+Activity Diagram for enhanced for statement:
+See diagram attached
+
+b. Write a program that prints the following array's values in descending order
+===============================================================================
+
+Program
+========
+package MdTerm;
+
+import java.util.Arrays;  //Arrays class user for array manipulation.
+
+public class DescendingArray {
+
+	public static void main(String[] args) {
+		int a[] = {1,5,3,7,9,0,2,6,4,8};
+		Arrays.sort(a);  //sort the array
+		
+		//Print the array in descending order.
+		for(int counter = a.length -1; counter >= 0;counter--){
+			System.out.println(a[counter]);
+		}
+	}
+}
+
+
+Output
+======
+9
+8
+7
+6
+5
+4
+3
+2
+1
+0
+
+c. Write a program containing a method that determines whether a five-digit word is a
+palindrome.
+======================================================================================
+package MdTerm;
+
+public class Palindrome {
+
+	public static void main(String[] args) {
+		char c[] = {'a','b','c','b','a'};
+		char c2[] = {'a','b','c','d','e'};
+		
+		System.out.print("The following characters is a Palidrome <- ");
+		System.out.print(c);				
+		System.out.printf(" :%s",isPalindrome(c));
+		
+		
+		System.out.print("\nThe following characters is a Palidrome <- ");
+		System.out.print(c2);				
+		System.out.printf(" :%s",isPalindrome(c2));
+		
+
+	}
+	
+	public static boolean isPalindrome(char[] ch){
+		
+		int chr1 = 0;  //  First character
+		int chr2 = ch.length - 1; //last of array at last character.
+		
+		while(chr2 > chr1){   
+			if(ch[chr1] != ch[chr2]){
+				return false;
+			}
+			++chr1;  //converge the beginning and end of array
+			--chr2;
+		}
+		return true;
+	}
+}
+
+
+Output
+======
+The following characters is a Palidrome <- abcba :true
+The following characters is a Palidrome <- abcde :false
+
+
+d. What does the following program do? Explain line-byline and give the output
+==============================================================================
+
+package MdTerm;  							   //Assign this class to a package
+ 
+public class ReverseOrder {  				  //Declare the class
+
+	public static void main(String[] args) {  //define the main method
+		 int Table [ ];   					  //Declare an array variable of type int and name Table to reference the array object.
+		 Table = new int[ 6 ];  			  //Declare the array object and set its lengt to 6 
+		   
+		  for ( int i = 0; i < 6; i++ )  	 //for statement for looping through the array
+		     Table[ i ] = i * ( i + 1 );     // assign each element of the array to = counter * (counter + 1)
+
+		  for ( int i = 6; i > 0 ; i-- ) {   //for statement for looping through the array this time descendingly
+		 	System.out.printf( "%d \t ", Table [6-i] );  //Display the value of the array selected value i.e.  counter - 1 in descending order 
+		    if ( i%2 != 0 )                              //If the counter is an odd number move to a new line 
+		          System.out.print( "\n" );              //the move to a new line
+		   		
+		  }												 //end for loop. 
+	}  //end main 													  
+}  //end class
+
+
+
+Output
+=====
+0 	 2 	 
+6 	 12 	 
+20 	 30 	 
+
+
+
+
+
+ 

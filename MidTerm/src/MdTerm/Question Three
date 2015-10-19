@@ -148,6 +148,60 @@ Is triangle a pythagorean triple? p
 
 Enter side 1 of triangle (-1 to exit):-1
 
+d. Write a program that prints out primes in decreasing order between 1 and 59
+(1 is considered to be a prime here.)
+===============================================================================
+
+Program
+=======
+package MdTerm;
+
+public class PrimeNumber {
+	public static void main(String[] args){
+		int m = 59;
+		int maxPrimes = 59;
+		
+		while(m <= maxPrimes && m > 0){
+			if(isPrime(m)){
+				System.out.println("Prime Number:"+m);
+			}
+			m = m - 1;
+		}
+	}
+	
+	public static boolean isPrime(int number){
+        for(int i=2; i<=number/2; i++){
+            if(number % i == 0){
+                return false;
+            }
+        }
+        return true;
+	}
+	
+	
+}
+
+
+Output
+======
+Prime Number:59
+Prime Number:53
+Prime Number:47
+Prime Number:43
+Prime Number:41
+Prime Number:37
+Prime Number:31
+Prime Number:29
+Prime Number:23
+Prime Number:19
+Prime Number:17
+Prime Number:13
+Prime Number:11
+Prime Number:7
+Prime Number:5
+Prime Number:3
+Prime Number:2
+Prime Number:1
 
 
 
